@@ -1,0 +1,130 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.menu-for-every-day
+	padding: 80px 0 175px 0
+	.menu-left
+		color: #000
+		z-index: -1
+		.title
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			line-height: 32px
+			padding-bottom: 10px
+		.descr
+			font-size: 18px
+			font-style: normal
+			font-weight: 400
+			line-height: 32px
+			margin-bottom: 40px
+			p
+				display: flex
+				align-items: center
+				span
+					display: flex
+					align-items: center
+					padding: 0 20px
+					margin-bottom: 5px
+	.menu-right
+		position: relative
+		z-index: -1
+		.left-bottom
+			position: absolute
+			bottom: -85px
+			left: -95px
+		.center
+			border: 2px solid #D3B47F
+			width: 471px
+			height: 502px
+			flex-shrink: 0
+			margin-top: 50px
+		.right-top
+			position: absolute
+			top: 0
+			right: 0
+
+.slider
+	background: #3A4574
+	text-align: center
+	padding: 220px 120px
+	color: #D3B47F
+	padding: 220px 0
+	img
+		margin-bottom: 35px
+	h4
+		padding-bottom: 20px
+		font-size: 36px
+		font-style: normal
+		font-weight: 600
+	p
+		padding-bottom: 40px
+		line-height: 40px
+		padding: 0 205px
+		margin-top: 40px
+		font-size: 24px
+		font-style: normal
+		font-weight: 600
+		line-height: 40px
+		letter-spacing: 5.88px
+		color: #D3B47F
+	.descr
+		color: #fff
+		font-size: 16px
+		font-weight: 400
+		line-height: 40px
+		letter-spacing: 1px
+		margin: 0 auto
+		width: 97%
+	.swiper-container
+		position: relative
+		.slider__prev, .slider__next
+			position: absolute
+			cursor: pointer
+			text-align: center
+			-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			top: 50%
+			z-index: 2
+			color: #000
+		.slider__next
+			right: 100px
+		.slider__prev
+			left: 100px
+		.slider__prev:focus, .slider__next:focus
+			outline: none
+
+@media (max-width: 767.98px)
+
+
+//ALWAYS END
+@import "media"
